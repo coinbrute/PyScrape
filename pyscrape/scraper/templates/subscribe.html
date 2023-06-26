@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subscribe</title>
+</head>
+<body>
+    <h1>Subscribe to a Plan</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="plan">Choose a plan:</label>
+        <select id="plan" name="plan">
+            <!-- You would populate this with the available pricing plans -->
+            <option value="basic">Basic</option>
+            <option value="premium">Premium</option>
+        </select>
+        <label for="payment">Enter your payment information:</label>
+        <input type="text" id="payment" name="payment">
+        <input type="submit" value="Subscribe">
+    </form>
+</body>
+</html>

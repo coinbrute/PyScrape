@@ -28,7 +28,7 @@ class Notification(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     message = models.CharField(max_length=200)
     date = models.DateTimeField(auto_now_add=True)
-    read = models.booleanField(default=False)
+    read = models.BooleanField(default=False)
 
 '''
 Represents a pricing plan. 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Your Dashboard</h1>
+    <h2>Your Tasks</h2>
+    {% for task in tasks %}
+        <p>{{ task.url }} - {{ task.status }}</p>
+    {% endfor %}
+    <h2>Your Notifications</h2>
+    {% for notification in notifications %}
+        <p>{{ notification.message }}</p>
+    {% endfor %}
+</body>
+</html>
